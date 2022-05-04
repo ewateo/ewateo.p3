@@ -1,0 +1,78 @@
+@mixin commander($margin : 10px) {
+    padding: 15px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(-10deg, $color-primary 5%, $color-secondary 100%);
+    border: inherit; 
+    margin: $margin;
+    cursor: pointer;
+    &:hover {
+        background:linear-gradient(-10deg, ($color-primary 5%,0), $color-secondary 100%);  
+    }
+    }
+    @mixin footer($height : 200px) {
+        font-family: roboto;
+        height: $height;
+        color: white;
+        background-color: rgb(36, 34, 34);
+    }
+    @mixin button {
+        margin: 7px 2px;
+          border-radius: 10px;
+          border: inherit;
+          display: flex;
+          flex-direction: column;
+          height: 65px;
+          background-color: white;
+    }
+    @mixin flexcolumn {
+        display: flex;
+        flex-direction: column;
+    }
+    @mixin flexcenter {
+        display: flex;
+        justify-content: center;
+    }
+    @mixin base-shadow {
+        box-shadow: 2px 1px 8px -3px #000000;
+    }
+
+    @mixin loaderbasics {
+        .let1 {
+            animation: drop 3s ease-in-out;
+            color: $color-primary;
+          }
+          
+          .let2 {
+            animation: drop 3s ease-in-out;
+            color: $color-secondary;
+          }
+          
+          .let3 {
+            animation: drop 3s ease-in-out;
+            color: $color-tertiary;
+          }
+          
+          .let4 {
+            animation: drop 3s ease-in-out;
+            color: $color-primary;
+          }
+          
+          .let5 {
+            animation: drop 3s ease-in-out;
+            color: $color-secondary;
+          }
+          
+          .let6 {
+            animation: drop 3s ease-in-out;
+            color:$color-tertiary;
+          }
+          
+          .let7 {
+            animation: drop 3s ease-in-out;
+            color: $color-primary;
+          } 
+    }

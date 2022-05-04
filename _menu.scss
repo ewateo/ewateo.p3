@@ -1,0 +1,263 @@
+@import "./mixins";
+@import "./variables";
+@import "./responsive-tablets";
+@import "./responsive-dekstop";
+@import "./animation";
+
+.load {
+ opacity: 0;
+  z-index: -5;
+}
+.carte-header {
+    z-index: 3;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+   & a {
+     text-decoration: none;
+     color: inherit;
+   }
+   & img {
+       margin-top: 10px;
+       width: 200px;
+       align-items: center;
+   }    
+   & i {
+     position: absolute;
+     left:10px;
+     top: 15px;
+     font-size: 20px;
+     cursor: pointer;
+   }
+   }
+   .carte {
+       background-color: $color-background;
+       & section {
+         & img {
+             object-fit: cover;
+             object-position:center;
+             z-index: 0;
+             position: absolute;
+             height: 250px;
+             top: 50px;
+         }
+       }
+       & .carte-h1{
+           font-family: Shrikhand;
+           font-size: 13px;
+           border: 1px solid $color-background;
+           background-color: $color-background;
+           padding-bottom: 20px;
+           position: absolute;
+           width: 100%;
+           top: 250px;
+           height: 40px;
+           border-top-left-radius:30px ;
+           border-top-right-radius:30px ;
+           h1 {
+               width: 70%;
+               padding-left: 20px;
+               padding-top: 20px;
+           }
+           & .heart {   
+            cursor: pointer;
+            & .fa-solid.fa-heart{
+             position: absolute;
+             right: 30px;
+             top: 25px;
+             font-size: 25px;
+             bottom: 27px;
+             color: white;
+             }
+           & .fa-regular.fa-heart {
+           position: absolute;
+             right: 30px;
+             top: 25px;
+             font-size: 25px;
+             bottom: 27px;
+             color: black;
+           }
+           &:hover {
+               .fa-solid.fa-heart {
+                   color:#bb46c0;
+                   transition: 350ms ease-in-out;
+               }
+               .fa-regular.fa-heart {
+                   color:#bb46c0;
+                   transition: 350ms ease-in-out;
+               }
+       
+           }
+           }
+       }
+   }
+  
+   .menu {
+     @include flexcolumn;
+     margin: 10px;
+     font-family: roboto;
+   
+     & button {
+       display: flex;
+       flex-direction: initial;
+       justify-content: space-between;
+       width: 100%;
+       overflow: hidden;
+       cursor: pointer;
+       @include button; 
+       @include base-shadow;
+       & .menu-block {
+         display: flex;
+       }
+       & .menu-text {
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         width: 70%;
+         height: 65px;
+       }
+       & .menu-price {
+         position: relative;
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         flex-direction: row;
+         width: 30%;
+       } 
+       
+       & .icon-slide {
+         height: 65px;
+         $button-width: 60px;
+         width: $button-width;
+         background-color: $color-tertiary;
+         border-top-right-radius:10px;
+         border-bottom-right-radius:10px;  
+         margin-right: -$button-width;
+         transition: margin-right 0.7s ease;
+       } 
+       &:hover  {
+         .icon-slide{
+         margin-right: 0px;
+       }
+       & i.fas.fa-check-circle  {
+        animation: spin 0.5s ease-in-out;
+      }
+      } 
+
+       & i {
+         justify-content: center;
+         margin-top: 22px;
+         display: flex;
+         font-size: 20px;
+         background-color: $color-tertiary;
+         color: white;
+         
+       }
+
+     }
+     & h2 {
+       font-size: 15px;
+       font-weight: 300;
+       border-bottom: 3px solid $color-tertiary ;
+       width: 30px;
+       padding-bottom: 4px;
+       padding-top: 40px;
+         &:first-child {
+           padding-top: 20px;
+         }
+     }
+     & h3 {
+         margin: 15px 0px 4px 12px;
+         text-align: start;
+         font-size: 15px;
+         width: 100%;
+         
+     }
+     & p {
+       margin: 0px 0px 0px 12px;
+       text-align: start;
+       width: 100%;
+       font-size: 14px;
+       font-weight: 200;
+       white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       display: block;
+     }
+     & span {
+         text-align: end;
+         font-weight: 700;
+         padding: 30px 20px 0px 0px;
+         white-space: nowrap;
+     }
+    }   
+.command {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 50px 0px;
+  & input {
+   @include commander;
+   @include base-shadow;
+   &:hover {
+    background: $color-button-light;
+    box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  }
+  }
+}
+
+
+// animation 
+
+.menu-first{
+ >* {
+  animation: appear 2s;
+  animation-fill-mode: both;
+ }
+ >* {
+  animation: appear 2s;
+  animation-delay: 100ms;
+  animation-fill-mode: both;
+  }
+  >* {
+    animation: appear 2s;
+    animation-delay: 200ms;
+    animation-fill-mode: both;
+  }
+}
+.menu-second {  
+    >* {
+    animation: appear 2s;
+    animation-delay: 300ms;
+    animation-fill-mode: both;
+    }
+    >* {
+      animation: appear 2s;
+      animation-delay: 400ms;
+      animation-fill-mode: both;
+      }
+      >* {
+        animation: appear 2s;
+        animation-delay: 500ms;
+        animation-fill-mode: both;
+        }  
+} 
+
+.menu-third {
+  >* {
+    animation: appear 2s;
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+    }
+    >* {
+      animation: appear 2s;
+      animation-delay: 700ms;
+      animation-fill-mode: both;
+      }
+      >* {
+        animation: appear 2s;
+        animation-delay: 800ms;
+        animation-fill-mode: both;
+        } 
+}
+

@@ -1,0 +1,448 @@
+@media (min-width: 765px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(244, 242, 242);
+    height: 60px;
+  }
+  header img {
+    margin: 10px 0px 20px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location {
+    background-color: rgb(244, 242, 242);
+  }
+
+  .firstpart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .firstpart .explore {
+    height: 300px;
+    background-color: white;
+    width: 50%;
+  }
+  .firstpart .explore p {
+    width: 60%;
+  }
+  .firstpart .firstpart-in {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+  }
+  .firstpart .firstpart-in h2 {
+    padding: 0px;
+    height: 50px;
+  }
+
+  .button {
+    flex-direction: column;
+  }
+
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .restaurant h2 {
+    padding-left: 0px;
+  }
+  .restaurant .restau-1 {
+    flex-direction: column;
+    width: 45%;
+    margin-right: 15px;
+  }
+  .restaurant .restau-1 a {
+    margin: 0px;
+  }
+  .restaurant .restau-2 {
+    flex-direction: column;
+    width: 45%;
+    margin-top: 80px;
+  }
+  .restaurant .restau-2 a {
+    margin: 0px;
+  }
+  .restaurant .container {
+    width: 100%;
+    padding: 0px;
+    margin: 0px 0px 15px 0px;
+  }
+}
+@media (min-width: 765px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+  }
+  footer .foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  footer .foot .footer-first {
+    height: 33%;
+    width: 20%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .foot .footer-first img {
+    padding: 10px 0px 0px 80px;
+  }
+  footer .foot .footer-second {
+    height: 33%;
+    width: 20%;
+    flex-direction: column;
+  }
+  footer .foot .footer-third {
+    height: 33%;
+    width: 20%;
+    flex-direction: column;
+  }
+}
+@media (min-width: 990px) {
+  .firstpart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .firstpart .explore {
+    width: 100%;
+  }
+  .firstpart .firstpart-in {
+    width: 100%;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+  }
+  .firstpart .firstpart-in h2 {
+    width: 100%;
+  }
+  .firstpart .firstpart-in .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .firstpart .firstpart-in .row .button {
+    width: 33%;
+    margin: 10px;
+  }
+}
+.carte-header {
+  z-index: 2;
+  height: 300px;
+  text-align: center;
+}
+.carte-header img {
+  text-align: center;
+  margin-top: 15px;
+  width: 150px;
+}
+.carte-header i {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+
+.carte {
+  background-color: rgb(244, 242, 242);
+}
+.carte section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  position: absolute;
+  height: 250px;
+  top: 50px;
+}
+.carte .carte-h1 {
+  font-family: Shrikhand;
+  font-size: 13px;
+  border: 1px solid rgb(244, 242, 242);
+  background-color: rgb(244, 242, 242);
+  padding-bottom: 20px;
+  position: absolute;
+  width: 100%;
+  top: 250px;
+  height: 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.carte .carte-h1 h1 {
+  width: 70%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  font-family: roboto;
+}
+.menu button {
+  margin: 7px 2px;
+  border-radius: 10px;
+  border: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 65px;
+  background-color: white;
+}
+.menu h2:first-child {
+  padding-top: 20px;
+}
+.menu h3 {
+  margin: 15px 0px 4px 12px;
+  text-align: start;
+  font-size: 15px;
+}
+.menu p {
+  margin: 0px 0px 0px 12px;
+  text-align: start;
+  width: 80%;
+  font-size: 14px;
+  font-weight: 200;
+}
+.menu span {
+  text-align: end;
+  position: relative;
+  bottom: 17px;
+  right: 20px;
+  font-weight: 700;
+}
+.menu .slide .fa-solid {
+  position: absolute;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 10px 0px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  padding: 15px 40px 15px 0px;
+  background: rgb(202, 198, 198);
+  font-family: roboto;
+  color: rgb(62, 61, 61);
+}
+.location i {
+  padding: 0px 15px;
+  color: rgb(62, 61, 61);
+}
+
+.firstpart {
+  display: flex;
+  flex-direction: column;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 40px 20px;
+  font-family: roboto;
+  background-color: rgb(244, 242, 242);
+}
+.explore h2 {
+  padding-bottom: 15px;
+  font-size: 23px;
+  width: 250px;
+  font-weight: 900;
+}
+.explore p {
+  padding-bottom: 30px;
+  font-weight: 200;
+}
+.explore input {
+  padding: 15px 0px;
+  border-radius: 100px;
+  background: linear-gradient(-10deg, #9356DC 5%, #FF79DA 100%);
+  color: white;
+  border: inherit;
+  width: 200px;
+}
+.explore + h2 {
+  padding: 40px 0px 15px 20px;
+  width: 50%;
+  font-family: roboto;
+}
+
+.firstpart-in h2 {
+  padding: 40px 0px 15px 20px;
+  width: 50%;
+  font-family: roboto;
+}
+
+.button {
+  width: 95%;
+  padding: 27px;
+  border-radius: 20px;
+  border: transparent;
+  margin: 20px 0px 20px 3%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(146, 86, 220, 0.0823529412);
+}
+.button:hover .fa-solid {
+  color: #9356DC;
+}
+.button p {
+  position: absolute;
+  top: 29px;
+  left: -3px;
+  z-index: 1;
+  color: white;
+}
+.button .fa-solid {
+  color: grey;
+  position: absolute;
+}
+.button .fa-solid.fa-circle {
+  left: -9px;
+  font-size: 20px;
+  color: #9356DC;
+}
+.button .fa-solid.fa-mobile-screen-button {
+  left: 40px;
+  font-size: 20px;
+}
+.button .fa-solid.fa-ellipsis-vertical {
+  left: 34px;
+  font-size: 20px;
+}
+.button .fa-solid.fa-bars {
+  left: 40px;
+  font-size: 20px;
+  justify-content: center;
+}
+.button .fa-solid.fa-store {
+  font-size: 20px;
+  left: 40px;
+  color: #9356DC;
+}
+
+.restaurant {
+  background-color: rgb(244, 242, 242);
+  font-family: roboto;
+  padding-bottom: 40px;
+}
+.restaurant h2 {
+  padding: 50px 0px 0px 20px;
+  font-weight: 900;
+}
+.restaurant a {
+  text-decoration: none;
+}
+.restaurant .container {
+  width: 95%;
+  margin: 20px 0px 20px 2.5%;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.restaurant span {
+  position: absolute;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 12px;
+  right: 12px;
+  font-size: 15px;
+  color: rgb(84, 84, 84);
+  text-decoration: none;
+}
+.restaurant img {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px 10px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.restaurant h3 {
+  padding: 10px 0px 0px 10px;
+  width: 70%;
+  color: black;
+}
+.restaurant p {
+  padding: 5px 5px 0px 10px;
+  font-weight: 300;
+  width: 50%;
+  color: black;
+}
+.restaurant .fa.fa-heart-o {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  bottom: 27px;
+  color: black;
+}
+
+restau-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+restau-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  font-family: roboto;
+  height: 200px;
+  color: white;
+  background-color: rgb(36, 34, 34);
+}
+footer a {
+  text-decoration: none;
+}
+footer img {
+  filter: invert(100%);
+  padding: 30px 0px 20px 20px;
+}
+footer li {
+  padding: 5px 0px 0px 20px;
+  cursor: pointer;
+}
+footer .fa-solid {
+  margin-right: 15px;
+}

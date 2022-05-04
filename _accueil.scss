@@ -1,0 +1,275 @@
+@import "./mixins";
+@import "./variables";
+@import "./responsive-tablets";
+@import "./responsive-dekstop";  
+@import "./animation" ;
+@include loaderbasics;
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.load {
+    background-color: whitesmoke;
+    position: absolute;
+    @include flexcenter;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:roboto;
+    font-weight: 100;
+    font-size: 5em;
+    color: $color-tertiary; 
+    opacity: 0;
+    animation:load 1s linear;
+  &:span { 
+    position: absolute;
+    top: 0.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+}
+header {
+    @include flexcolumn;
+    background-color: white;
+}
+.logo {
+    @include flexcenter;
+    padding: 20px 0px 10px 0px;
+}
+
+.location {
+    @include flexcenter;
+    padding: 15px 40px 15px 0px;
+    background: rgb(202, 198, 198);
+    font-family: roboto ;
+    color: rgb(62, 61, 61);
+    & i {
+        padding: 0px 15px;
+        color: rgb(62, 61, 61);
+    }
+}
+.firstpart {
+    @include flexcolumn;
+}
+.explore {
+    @include flexcolumn;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 40px 20px;
+    font-family: roboto;
+    background-color: $color-background;
+    & h2 {
+        padding-bottom: 15px;
+        font-size: 23px;
+        width: 250px;
+        font-weight: 900;
+    }
+    & p {
+        padding-bottom: 30px;
+        font-weight: 200;
+    }
+    & input {
+        padding: 15px 0px;
+        border-radius: 100px;
+        background: $color-button;
+        color: white;
+        border:inherit;
+        width: 200px;
+        @include base-shadow;
+        &:hover {
+            background:$color-button-light;
+            box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    + h2 {
+        padding: 40px 0px 15px 20px;
+        width: 50%;
+        font-family: roboto;
+    }
+}
+.firstpart-in {
+    h2 {
+        padding: 40px 0px 15px 20px;
+        width: 50%;
+        font-family: roboto;
+    }
+}
+.button {
+   width: 95%;
+   padding: 27px;
+   border-radius: 20px;
+   border: transparent;
+   margin: 20px 0px 20px 3%;
+   @include flexcenter;
+   @include base-shadow;
+   position: relative;
+   font-weight: 600;
+   cursor: pointer;
+   &:hover {
+      background-color: #9256dc15;
+     .fa-solid {
+         color: $color-primary;
+     }
+   }
+   & p {
+       position:absolute;
+       top: 29px;
+       left: -3px;
+       z-index: 1;
+       color: white;
+   }
+  & .fa-solid {
+      color: grey;
+      position: absolute;
+      
+      
+     &.fa-circle {
+         left: -9px;
+         font-size: 20px;
+         color: $color-primary;
+
+     } 
+     &.fa-mobile-screen-button {
+         left: 40px;
+         font-size: 20px;
+     }
+     &.fa-ellipsis-vertical {
+         left: 34px;
+         font-size: 20px;
+     }
+     &.fa-bars {
+     left: 40px;
+     font-size: 20px;
+     justify-content: center;
+     }
+     &.fa-store {
+    font-size: 20px;
+    left: 40px;
+     }
+  }
+}
+.restaurant {
+ background-color:$color-background;
+ font-family: roboto;
+ padding-bottom: 40px;
+   h2 {
+       padding: 50px 0px 0px 20px;
+       font-weight: 900;
+   }
+   a {
+       text-decoration: none;
+   }
+    .container {
+        width: 95%;
+        margin: 20px 0px 20px 2.5%;
+        height: 250px ;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        @include base-shadow;
+    }
+    & span {
+        position: absolute;
+        border: 1px solid $color-tertiary;
+        background-color: $color-tertiary; 
+        border-radius: 3px;
+        padding: 5px;
+        margin-top: 12px;
+        right: 12px;
+        font-size: 15px;
+        color: rgb(84, 84, 84);
+        text-decoration: none;
+    }
+    & img {
+         width: 100%;
+         height: 170px;
+         border-radius: 10px 10px 0px 0px;
+         object-fit: cover;
+         object-position: center;
+
+    }
+    & h3 {
+        padding: 10px 0px 0px 10px;
+        width: 70%;
+        color: black;
+    }
+    & p {
+        padding: 5px 5px 0px 10px;
+        font-weight: 300;
+        width: 50%;
+        color: black;
+    }
+    & .heart {
+     cursor: pointer;
+     & .fa-solid.fa-heart{
+      position: absolute;
+      right: 30px;
+      font-size: 25px;
+      bottom: 27px;
+      color: white;
+      }
+    & .fa-regular.fa-heart {
+    position: absolute;
+      right: 30px;
+      font-size: 25px;
+      bottom: 27px;
+      color: black;
+    }
+    &:hover {
+        .fa-solid.fa-heart {
+            color:#bb46c0;
+            transition: 350ms ease-in-out;
+        }
+        .fa-regular.fa-heart {
+            color:#bb46c0;
+            transition: 350ms ease-in-out;
+        }
+
+    }
+    }
+
+}
+restau-1 {
+   @include flexcolumn;
+}
+restau-2 {
+    @include flexcolumn;
+}
+footer {
+    
+    @include footer;
+    & a {
+        text-decoration: none;
+        padding: 10px;
+    }
+    & img {
+        filter: invert(100%);
+        padding: 30px 0px 20px 20px;
+
+    }
+    & li {
+        padding: 5px 0px 0px 20px;
+        cursor: pointer;
+
+    }
+    & .fa-solid {
+        margin-right: 15px;
+    }
+    .footer-second,.footer-third {
+        >* {
+            padding: 6px;
+        }
+        a {
+            text-decoration: none;
+        color: white;
+        }
+    }
+}
+

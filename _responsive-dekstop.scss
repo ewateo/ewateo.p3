@@ -1,0 +1,59 @@
+@import "./variables";
+@import "./mixins";
+@import "./responsive-tablets";
+
+@media (min-width:990px) {
+    .firstpart {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+       .explore {
+           width: 100%;
+       }
+       .firstpart-in {
+        width: 100%;
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+        h2 {
+            width: 100%;
+        }
+        .row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .button {
+             width: 33%;
+             margin: 10px;
+            }
+        }
+    }
+    }
+   
+}
+// menu dekstop
+
+@media (min-width:1185px) {
+    .menu {
+       display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0px;
+        margin-left: 10px;
+       // width: 90%;
+       // justify-content: center;
+       .menu-first {
+         width: 30%;
+         padding-right: 25px;
+       }
+       .menu-second {
+        width: 30%;
+        padding-right: 25px;
+       }
+       .menu-third {
+        width: 30%;
+        padding-right: 25px;
+       }
+    }
+}
