@@ -1304,6 +1304,7 @@ footer .footer-second a, footer .footer-third a {
 }
 .menu button .menu-block {
   display: flex;
+  width: 100%;
 }
 .menu button .menu-text {
   position: relative;

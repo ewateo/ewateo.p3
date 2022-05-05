@@ -97,9 +97,10 @@
      @include flexcolumn;
      margin: 10px;
      font-family: roboto;
+     
    
      & button {
-       display: flex;
+       display:flex;
        flex-direction: initial;
        justify-content: space-between;
        width: 100%;
@@ -109,6 +110,7 @@
        @include base-shadow;
        & .menu-block {
          display: flex;
+         width: 100%;
        }
        & .menu-text {
          position: relative;
