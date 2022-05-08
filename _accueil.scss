@@ -7,6 +7,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: roboto;
 }
 .load {
     background-color: whitesmoke;
@@ -101,14 +102,15 @@ header {
         font-family: roboto;
     }
 }
+
 .button {
    width: 95%;
    padding: 27px;
    border-radius: 20px;
    border: transparent;
    margin: 20px 0px 20px 3%;
-   @include flexcenter;
    @include base-shadow;
+   display: flex;
    position: relative;
    font-weight: 600;
    cursor: pointer;
@@ -118,42 +120,48 @@ header {
          color: $color-primary;
      }
    }
-   & p {
+   
+   &--text {
+       width: 50%;
+       justify-content: flex-start;
+   }
+   &--icon2 {
+    width: 25%;
+    justify-content: flex-start;
+   }
+   p{
        position:absolute;
-       top: 29px;
+       top: 28px;
        left: -3px;
        z-index: 1;
        color: white;
    }
   & .fa-solid {
       color: grey;
-      position: absolute;
-      
-      
      &.fa-circle {
-         left: -9px;
+         position: absolute;
+         left: -8.5px;
          font-size: 20px;
          color: $color-primary;
-
      } 
      &.fa-mobile-screen-button {
-         left: 40px;
-         font-size: 20px;
+    justify-content: flex-start;
+    font-size: 20px;
      }
      &.fa-ellipsis-vertical {
-         left: 34px;
-         font-size: 20px;
+     width: 5px;
+     font-size: 20px;
      }
      &.fa-bars {
      left: 40px;
      font-size: 20px;
-     justify-content: center;
+     
      }
      &.fa-store {
     font-size: 20px;
-    left: 40px;
      }
   }
+  
 }
 .restaurant {
  background-color:$color-background;

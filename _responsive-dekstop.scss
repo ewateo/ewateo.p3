@@ -26,6 +26,13 @@
             .button {
              width: 33%;
              margin: 10px;
+             &--icon2 {
+                width: 10%;
+                
+              }
+              &--text {
+                  width: 100%;
+              }
             }
         }
     }

@@ -48,7 +48,14 @@
   }
 
   .button {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button--icon2 {
+    width: 10%;
+  }
+  .button--text {
+    width: 75%;
   }
 
   .restaurant {
@@ -197,7 +204,14 @@
   }
 
   .button {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button--icon2 {
+    width: 10%;
+  }
+  .button--text {
+    width: 75%;
   }
 
   .restaurant {
@@ -323,6 +337,12 @@
   .firstpart .firstpart-in .row .button {
     width: 33%;
     margin: 10px;
+  }
+  .firstpart .firstpart-in .row .button--icon2 {
+    width: 10%;
+  }
+  .firstpart .firstpart-in .row .button--text {
+    width: 100%;
   }
 }
 @media (min-width: 1185px) {
@@ -509,6 +529,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: roboto;
 }
 
 .load {
@@ -620,9 +641,8 @@ header {
   border-radius: 20px;
   border: transparent;
   margin: 20px 0px 20px 3%;
-  display: flex;
-  justify-content: center;
   box-shadow: 2px 1px 8px -3px #000000;
+  display: flex;
   position: relative;
   font-weight: 600;
   cursor: pointer;
@@ -633,38 +653,44 @@ header {
 .button:hover .fa-solid {
   color: #9356DC;
 }
+.button--text {
+  width: 50%;
+  justify-content: flex-start;
+}
+.button--icon2 {
+  width: 25%;
+  justify-content: flex-start;
+}
 .button p {
   position: absolute;
-  top: 29px;
+  top: 28px;
   left: -3px;
   z-index: 1;
   color: white;
 }
 .button .fa-solid {
   color: grey;
-  position: absolute;
 }
 .button .fa-solid.fa-circle {
-  left: -9px;
+  position: absolute;
+  left: -8.5px;
   font-size: 20px;
   color: #9356DC;
 }
 .button .fa-solid.fa-mobile-screen-button {
-  left: 40px;
+  justify-content: flex-start;
   font-size: 20px;
 }
 .button .fa-solid.fa-ellipsis-vertical {
-  left: 34px;
+  width: 5px;
   font-size: 20px;
 }
 .button .fa-solid.fa-bars {
   left: 40px;
   font-size: 20px;
-  justify-content: center;
 }
 .button .fa-solid.fa-store {
   font-size: 20px;
-  left: 40px;
 }
 
 .restaurant {
@@ -835,7 +861,14 @@ footer .footer-second a, footer .footer-third a {
   }
 
   .button {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button--icon2 {
+    width: 10%;
+  }
+  .button--text {
+    width: 75%;
   }
 
   .restaurant {
@@ -984,7 +1017,14 @@ footer .footer-second a, footer .footer-third a {
   }
 
   .button {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button--icon2 {
+    width: 10%;
+  }
+  .button--text {
+    width: 75%;
   }
 
   .restaurant {
@@ -1110,6 +1150,12 @@ footer .footer-second a, footer .footer-third a {
   .firstpart .firstpart-in .row .button {
     width: 33%;
     margin: 10px;
+  }
+  .firstpart .firstpart-in .row .button--icon2 {
+    width: 10%;
+  }
+  .firstpart .firstpart-in .row .button--text {
+    width: 100%;
   }
 }
 @media (min-width: 1185px) {
@@ -1529,7 +1575,14 @@ footer .footer-second a, footer .footer-third a {
   }
 
   .button {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button--icon2 {
+    width: 10%;
+  }
+  .button--text {
+    width: 75%;
   }
 
   .restaurant {
@@ -1678,7 +1731,14 @@ footer .footer-second a, footer .footer-third a {
   }
 
   .button {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .button--icon2 {
+    width: 10%;
+  }
+  .button--text {
+    width: 75%;
   }
 
   .restaurant {
@@ -1804,6 +1864,12 @@ footer .footer-second a, footer .footer-third a {
   .firstpart .firstpart-in .row .button {
     width: 33%;
     margin: 10px;
+  }
+  .firstpart .firstpart-in .row .button--icon2 {
+    width: 10%;
+  }
+  .firstpart .firstpart-in .row .button--text {
+    width: 100%;
   }
 }
 @media (min-width: 1185px) {

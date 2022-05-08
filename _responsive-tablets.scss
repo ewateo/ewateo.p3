@@ -53,7 +53,14 @@
        }
    }
    .button {
-       flex-direction: column;
+       flex-direction: row;
+       justify-content:center;
+     &--icon2 {
+       width: 10%;
+     }
+     &--text {
+         width: 75%;
+     }
    }
    .restaurant {
        display: flex;
