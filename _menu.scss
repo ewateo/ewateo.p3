@@ -56,6 +56,7 @@
            border-top-left-radius:30px ;
            border-top-right-radius:30px ;
            h1 {
+               font-family: shrikhand;
                width: 70%;
                padding-left: 20px;
                padding-top: 20px;
@@ -211,7 +212,8 @@
 
 // animation 
 
-.menu-first{
+.menu-first,
+.menu-first-last{
  >* {
   animation: appear 2s;
   animation-fill-mode: both;
