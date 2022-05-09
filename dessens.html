@@ -41,29 +41,27 @@
       <img
         src="./MaquettesOhmyfood/images/logo/ohmyfood.png"
         alt="logo ohmyfood"
-        width="100px"
+        width="100"
       />
     </header>
     <main class="carte">
-      <section>
+      <div class="foodpicture">
         <img
           src="./MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           alt="restaurant La palette du goût"
-          width="100%"
-          height="250px"
+          height="250"
         />
-      </section>
+      </div>
       <div class="carte-h1">
-        <h1>Le délice des sens</h1>
+        <h2>Le délice des sens</h2>
         <div class="heart">
           <i class="far fa-heart"></i>
         </div>
       </div>
-      <div class="menu">
-        <!--faire un mixins , car les bouton ce ressemble avec les autre menu-->
-        <div class="menu-first">
-          <h2>ENTRÉES</h2>
-          <button type="button">
+      <article class="menu">
+        <h2 class="title1">ENTRÉES</h2>
+        <ul class="menu-first">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Tartare de thon</h3>
@@ -76,9 +74,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Bouchée de homard croustillant</h3>
@@ -91,9 +89,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Velouté de cèpes</h3>
@@ -106,11 +104,11 @@
                 </div>
               </div>
             </div>
-          </button>
-        </div>
-        <div class="menu-second">
-          <h2>PLATS</h2>
-          <button type="button">
+          </li>
+        </ul>
+        <h2 class="title2">PLATS</h2>
+        <ul class="menu-second">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Poulet rôti aux herbes de provence</h3>
@@ -123,9 +121,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Langouste rôtie</h3>
@@ -138,9 +136,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Côte de boeuf angus</h3>
@@ -153,11 +151,11 @@
                 </div>
               </div>
             </div>
-          </button>
-        </div>
-        <div class="menu-third">
-          <h2>DESSERTS</h2>
-          <button type="button">
+          </li>
+        </ul>
+        <h2 class="title3">DESSERTS</h2>
+        <ul class="menu-third">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>farandole de desserts</h3>
@@ -170,9 +168,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Crème brulée</h3>
@@ -185,9 +183,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Tiramisu</h3>
@@ -200,11 +198,10 @@
                 </div>
               </div>
             </div>
-          </button>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </article>
       <div class="command">
-        <!--faire un mixins , car le bouton ce ressemble avec l'autre-->
         <input type="button" value="Commander" />
       </div>
     </main>

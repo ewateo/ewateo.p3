@@ -33,7 +33,7 @@
    }
    .carte {
        background-color: $color-background;
-       & section {
+       & .foodpicture {
          & img {
              object-fit: cover;
              object-position:center;
@@ -41,6 +41,7 @@
              position: absolute;
              height: 250px;
              top: 50px;
+             width: 100%;
          }
        }
        & .carte-h1{
@@ -55,9 +56,10 @@
            height: 40px;
            border-top-left-radius:30px ;
            border-top-right-radius:30px ;
-           h1 {
+           h2 {
                font-family: shrikhand;
                width: 70%;
+               font-size: 27px;
                padding-left: 20px;
                padding-top: 20px;
            }
@@ -128,7 +130,7 @@
      font-family: roboto;
      
    
-     & button {
+     & li {
        display:flex;
        flex-direction: initial;
        justify-content: space-between;
@@ -187,13 +189,16 @@
        }
 
      }
-     & h2 {
+     & .title1,
+     .title2,
+     .title3 {
        font-size: 15px;
        font-weight: 300;
-       border-bottom: 3px solid $color-tertiary ;
+       border-bottom: 3px solid $color-tertiary;
        width: 30px;
        padding-bottom: 4px;
        padding-top: 40px;
+       animation: appear 2s;
          &:first-child {
            padding-top: 20px;
          }
@@ -241,7 +246,12 @@
 // animation 
 
 .menu-first,
-.menu-first-last{
+.menu-first-last,
+{
+ .title1 {
+   animation: appear 2s; 
+   animation-fill-mode: both;
+ }
  >* {
   animation: appear 2s;
   animation-fill-mode: both;
@@ -258,6 +268,11 @@
   }
 }
 .menu-second {  
+  .title2 {
+    animation: appear 2s; 
+    animation-delay: 300ms;
+    animation-fill-mode: both;
+  }
     >* {
     animation: appear 2s;
     animation-delay: 300ms;
@@ -276,6 +291,11 @@
 } 
 
 .menu-third {
+  .title3 {
+    animation: appear 2s; 
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+  }
   >* {
     animation: appear 2s;
     animation-delay: 600ms;

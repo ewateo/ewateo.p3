@@ -559,6 +559,15 @@
   -webkit-animation: load 3s linear;
           animation: load 3s linear;
 }
+.loadspan {
+  position: absolute;
+  top: 0.63em;
+  display: inline-block;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
 .load:span {
   position: absolute;
   top: 0.63em;
@@ -671,7 +680,7 @@ header {
   width: 25%;
   justify-content: flex-start;
 }
-.button p {
+.button span:first-child {
   position: absolute;
   top: 28px;
   left: -3px;
@@ -1360,7 +1369,7 @@ footer .footer-second a, footer .footer-third a {
 .carte {
   background-color: rgb(244, 242, 242);
 }
-.carte section img {
+.carte .foodpicture img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1369,6 +1378,7 @@ footer .footer-second a, footer .footer-third a {
   position: absolute;
   height: 250px;
   top: 50px;
+  width: 100%;
 }
 .carte .carte-h1 {
   font-family: Shrikhand;
@@ -1383,9 +1393,10 @@ footer .footer-second a, footer .footer-third a {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-.carte .carte-h1 h1 {
+.carte .carte-h1 h2 {
   font-family: shrikhand;
   width: 70%;
+  font-size: 27px;
   padding-left: 20px;
   padding-top: 20px;
 }
@@ -1453,7 +1464,7 @@ footer .footer-second a, footer .footer-third a {
   margin: 10px;
   font-family: roboto;
 }
-.menu button {
+.menu li {
   display: flex;
   flex-direction: initial;
   justify-content: space-between;
@@ -1469,18 +1480,18 @@ footer .footer-second a, footer .footer-third a {
   background-color: white;
   box-shadow: 2px 1px 8px -3px #000000;
 }
-.menu button .menu-block {
+.menu li .menu-block {
   display: flex;
   width: 100%;
 }
-.menu button .menu-text {
+.menu li .menu-text {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 70%;
   height: 65px;
 }
-.menu button .menu-price {
+.menu li .menu-price {
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -1488,7 +1499,7 @@ footer .footer-second a, footer .footer-third a {
   flex-direction: row;
   width: 30%;
 }
-.menu button .icon-slide {
+.menu li .icon-slide {
   height: 65px;
   width: 60px;
   background-color: #99E2D0;
@@ -1497,14 +1508,14 @@ footer .footer-second a, footer .footer-third a {
   margin-right: -60px;
   transition: margin-right 0.8s ease;
 }
-.menu button:hover .icon-slide {
+.menu li:hover .icon-slide {
   margin-right: 0px;
 }
-.menu button:hover i.fas.fa-check-circle {
+.menu li:hover i.fas.fa-check-circle {
   -webkit-animation: spin 0.6s ease-in-out;
           animation: spin 0.6s ease-in-out;
 }
-.menu button i {
+.menu li i {
   justify-content: center;
   margin-top: 20px;
   display: flex;
@@ -1512,15 +1523,21 @@ footer .footer-second a, footer .footer-third a {
   background-color: #99E2D0;
   color: white;
 }
-.menu h2 {
+.menu .title1,
+.menu .title2,
+.menu .title3 {
   font-size: 15px;
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
   width: 30px;
   padding-bottom: 4px;
   padding-top: 40px;
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
 }
-.menu h2:first-child {
+.menu .title1:first-child,
+.menu .title2:first-child,
+.menu .title3:first-child {
   padding-top: 20px;
 }
 .menu h3 {
@@ -1573,6 +1590,13 @@ footer .footer-second a, footer .footer-third a {
   box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
 }
 
+.menu-first .title1,
+.menu-first-last .title1 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
 .menu-first > *,
 .menu-first-last > * {
   -webkit-animation: appear 2s;
@@ -1599,6 +1623,14 @@ footer .footer-second a, footer .footer-third a {
           animation-fill-mode: both;
 }
 
+.menu-second .title2 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
 .menu-second > * {
   -webkit-animation: appear 2s;
           animation: appear 2s;
@@ -1624,6 +1656,14 @@ footer .footer-second a, footer .footer-third a {
           animation-fill-mode: both;
 }
 
+.menu-third .title3 {
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
 .menu-third > * {
   -webkit-animation: appear 2s;
           animation: appear 2s;

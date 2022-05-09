@@ -24,7 +24,18 @@
     color: $color-tertiary; 
     opacity: 0;
     animation:load 3s linear;
-  &:span { 
+    &span {
+        
+    position: absolute;
+    top: 0.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+    opacity: 0;
+    transform: rotateX(-90deg);
+    }
+  
+}
+.load:span {  
     position: absolute;
     top: 0.63em;  
     display: inline-block;
@@ -32,7 +43,6 @@
     opacity: 0;
     transform: rotateX(-90deg);
   }
-}
 header {
     @include flexcolumn;
     background-color: white;
@@ -131,7 +141,7 @@ header {
     width: 25%;
     justify-content: flex-start;
    }
-   p{
+   span:first-child{
        position:absolute;
        top: 28px;
        left: -3px;

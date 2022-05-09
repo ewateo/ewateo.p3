@@ -41,28 +41,28 @@
       <img
         src="./MaquettesOhmyfood/images/logo/ohmyfood.png"
         alt="logo ohmyfood"
-        width="100px"
+        width="100"
       />
     </header>
     <main class="carte">
-      <section>
+      <div class="foodpicture">
         <img
           src="./MaquettesOhmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           alt="restaurant La palette du goût"
           width="100%"
           height="250px"
         />
-      </section>
+      </div>
       <div class="carte-h1">
-        <h1>La note enchantée</h1>
+        <h2>La note enchantée</h2>
         <div class="heart">
           <i class="far fa-heart"></i>
         </div>
       </div>
-      <div class="menu">
-        <div class="menu-first-last">
-          <h2>ENTRÉES</h2>
-          <button type="button">
+      <article class="menu">
+        <h2 class="title1">ENTRÉES</h2>
+        <ul class="menu-first-last">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Ravioles de foie gras</h3>
@@ -75,9 +75,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Caviar osciètre</h3>
@@ -90,9 +90,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Homard et espuma de potiron</h3>
@@ -105,9 +105,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Foie gras de canard cuit entier</h3>
@@ -120,11 +120,11 @@
                 </div>
               </div>
             </div>
-          </button>
-        </div>
-        <div class="menu-second">
-          <h2>PLATS</h2>
-          <button type="button">
+          </li>
+        </ul>
+        <h2 class="title2">PLATS</h2>
+        <ul class="menu-second">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Noix de coquilles Saint-Jacques</h3>
@@ -137,9 +137,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Langoustine poêlée</h3>
@@ -152,9 +152,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Mijoté de queue de boeuf</h3>
@@ -167,11 +167,11 @@
                 </div>
               </div>
             </div>
-          </button>
-        </div>
-        <div class="menu-third">
-          <h2>DESSERTS</h2>
-          <button type="button">
+          </li>
+        </ul>
+        <h2 class="title3">DESSERTS</h2>
+        <ul class="menu-third">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Macaron noisette et chocolat</h3>
@@ -184,9 +184,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Baba au rhum Revisité</h3>
@@ -199,9 +199,9 @@
                 </div>
               </div>
             </div>
-          </button>
+          </li>
 
-          <button type="button">
+          <li>
             <div class="menu-block">
               <div class="menu-text">
                 <h3>Tarte au citron meringuée</h3>
@@ -214,9 +214,9 @@
                 </div>
               </div>
             </div>
-          </button>
-        </div>
-      </div>
+          </li>
+        </ul>
+      </article>
       <div class="command">
         <!--faire un mixins , car le bouton ce ressemble avec l'autre-->
         <input type="button" value="Commander" />
