@@ -556,8 +556,8 @@
   font-size: 5em;
   color: #99E2D0;
   opacity: 0;
-  -webkit-animation: load 1.5s linear;
-          animation: load 1.5s linear;
+  -webkit-animation: load 3s linear;
+          animation: load 3s linear;
 }
 .load:span {
   position: absolute;
