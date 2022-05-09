@@ -1,13 +1,13 @@
 @media (min-width: 765px) {
   header {
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(244, 242, 242);
     height: 60px;
   }
   header img {
-    margin: 10px 0px 20px 20px;
+    margin: 0px 0px 5px 20px;
     justify-content: center;
     align-items: center;
   }
@@ -157,14 +157,14 @@
 }
 @media (min-width: 765px) {
   header {
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(244, 242, 242);
     height: 60px;
   }
   header img {
-    margin: 10px 0px 20px 20px;
+    margin: 0px 0px 5px 20px;
     justify-content: center;
     align-items: center;
   }
@@ -584,7 +584,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 40px 15px 0px;
-  background: rgb(202, 198, 198);
+  background: rgba(221, 218, 218, 0.494);
   font-family: roboto;
   color: rgb(62, 61, 61);
 }
@@ -642,6 +642,7 @@ header {
   padding: 40px 0px 15px 20px;
   width: 50%;
   font-family: roboto;
+  font-weight: 900;
 }
 
 .button {
@@ -663,8 +664,8 @@ header {
   color: #9356DC;
 }
 .button--text {
-  width: 50%;
-  justify-content: flex-start;
+  width: 70%;
+  text-align: center;
 }
 .button--icon2 {
   width: 25%;
@@ -757,30 +758,101 @@ header {
 }
 .restaurant .heart {
   cursor: pointer;
-}
-.restaurant .heart .fa-solid.fa-heart {
-  position: absolute;
-  right: 30px;
-  font-size: 25px;
-  bottom: 27px;
-  color: white;
-}
-.restaurant .heart .fa-regular.fa-heart {
-  position: absolute;
-  right: 30px;
-  font-size: 25px;
-  bottom: 27px;
   color: black;
 }
-.restaurant .heart:hover .fa-solid.fa-heart {
-  color: #bb46c0;
-  transition: 350ms ease-in-out;
-}
-.restaurant .heart:hover .fa-regular.fa-heart {
-  color: #bb46c0;
-  transition: 350ms ease-in-out;
+.restaurant .heart .fa-solid.fa-heart,
+.restaurant .heart .fa-heart {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+  bottom: 27px;
 }
 
+.fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation: heart-in 0.9s;
+          animation: heart-in 0.9s;
+  font-weight: 800;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes heart-in {
+  0% {
+    transform: scale(1, 1);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    transform: scale(1, 1);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes heart-in {
+  0% {
+    transform: scale(1, 1);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    transform: scale(1, 1);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+}
 restau-1 {
   display: flex;
   flex-direction: column;
@@ -822,14 +894,14 @@ footer .footer-second a, footer .footer-third a {
 
 @media (min-width: 765px) {
   header {
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(244, 242, 242);
     height: 60px;
   }
   header img {
-    margin: 10px 0px 20px 20px;
+    margin: 0px 0px 5px 20px;
     justify-content: center;
     align-items: center;
   }
@@ -979,14 +1051,14 @@ footer .footer-second a, footer .footer-third a {
 }
 @media (min-width: 765px) {
   header {
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(244, 242, 242);
     height: 60px;
   }
   header img {
-    margin: 10px 0px 20px 20px;
+    margin: 0px 0px 5px 20px;
     justify-content: center;
     align-items: center;
   }
@@ -1320,31 +1392,61 @@ footer .footer-second a, footer .footer-third a {
 .carte .carte-h1 .heart {
   cursor: pointer;
 }
-.carte .carte-h1 .heart .fa-solid.fa-heart {
+.carte .carte-h1 .heart .fa-heart {
   position: absolute;
   right: 30px;
   top: 25px;
   font-size: 25px;
+  height: 25px;
   bottom: 27px;
-  color: white;
 }
-.carte .carte-h1 .heart .fa-regular.fa-heart {
-  position: absolute;
-  right: 30px;
-  top: 25px;
-  font-size: 25px;
-  bottom: 27px;
-  color: black;
-}
-.carte .carte-h1 .heart:hover .fa-solid.fa-heart {
-  color: #bb46c0;
-  transition: 350ms ease-in-out;
-}
-.carte .carte-h1 .heart:hover .fa-regular.fa-heart {
-  color: #bb46c0;
-  transition: 350ms ease-in-out;
+.carte .fa-heart:hover {
+  cursor: pointer;
+  -webkit-animation: heart-in 0.9s;
+          animation: heart-in 0.9s;
+  font-weight: 800;
+  background: -webkit-gradient(linear, right bottom, right top, from(#FF79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+@keyframes heart-in {
+  0% {
+    transform: scale(1, 1);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+    font-weight: 200;
+    -webkit-text-fill-color: black;
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    transform: scale(1, 1);
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -1393,20 +1495,20 @@ footer .footer-second a, footer .footer-third a {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-right: -60px;
-  transition: margin-right 0.7s ease;
+  transition: margin-right 0.8s ease;
 }
 .menu button:hover .icon-slide {
   margin-right: 0px;
 }
 .menu button:hover i.fas.fa-check-circle {
-  -webkit-animation: spin 0.5s ease-in-out;
-          animation: spin 0.5s ease-in-out;
+  -webkit-animation: spin 0.6s ease-in-out;
+          animation: spin 0.6s ease-in-out;
 }
 .menu button i {
   justify-content: center;
-  margin-top: 22px;
+  margin-top: 20px;
   display: flex;
-  font-size: 20px;
+  font-size: 25px;
   background-color: #99E2D0;
   color: white;
 }
@@ -1549,14 +1651,14 @@ footer .footer-second a, footer .footer-third a {
 
 @media (min-width: 765px) {
   header {
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(244, 242, 242);
     height: 60px;
   }
   header img {
-    margin: 10px 0px 20px 20px;
+    margin: 0px 0px 5px 20px;
     justify-content: center;
     align-items: center;
   }
@@ -1706,14 +1808,14 @@ footer .footer-second a, footer .footer-third a {
 }
 @media (min-width: 765px) {
   header {
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(244, 242, 242);
     height: 60px;
   }
   header img {
-    margin: 10px 0px 20px 20px;
+    margin: 0px 0px 5px 20px;
     justify-content: center;
     align-items: center;
   }

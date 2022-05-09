@@ -5,16 +5,17 @@
 @media (min-width: 765px)  {
 
     header {
-        flex-direction: row;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
        background-color:$color-background; 
         height: 60px;
         img {
-            margin: 10px 0px 20px 20px;
+            margin: 0px 0px 5px 20px;
             justify-content: center;
             align-items: center;
         }
+        
     }
     .location {
         background-color: $color-background;
