@@ -572,25 +572,8 @@
   font-size: 5em;
   color: #99E2D0;
   opacity: 0;
-  -webkit-animation: load 3s linear;
-          animation: load 3s linear;
-}
-.loadspan {
-  position: absolute;
-  top: 0.63em;
-  display: inline-block;
-  text-transform: uppercase;
-  opacity: 0;
-  transform: rotateX(-90deg);
-}
-
-.load:span {
-  position: absolute;
-  top: 0.63em;
-  display: inline-block;
-  text-transform: uppercase;
-  opacity: 0;
-  transform: rotateX(-90deg);
+  -webkit-animation: load 1.5s linear;
+          animation: load 1.5s linear;
 }
 
 header {

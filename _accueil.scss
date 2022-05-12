@@ -23,26 +23,9 @@
     font-size: 5em;
     color: $color-tertiary; 
     opacity: 0;
-    animation:load 3s linear;
-    &span {
-        
-    position: absolute;
-    top: 0.63em;  
-    display: inline-block;
-    text-transform: uppercase;  
-    opacity: 0;
-    transform: rotateX(-90deg);
-    }
-  
+    animation:load 1.5s linear;
 }
-.load:span {  
-    position: absolute;
-    top: 0.63em;  
-    display: inline-block;
-    text-transform: uppercase;  
-    opacity: 0;
-    transform: rotateX(-90deg);
-  }
+
 header {
     @include flexcolumn;
     background-color: white;
