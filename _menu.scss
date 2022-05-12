@@ -129,7 +129,11 @@
      margin: 10px;
      font-family: roboto;
      
-   
+      article {
+        display: flex;
+        flex-direction: column;
+      }
+
      & li {
        display:flex;
        flex-direction: initial;

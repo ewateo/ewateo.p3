@@ -51,20 +51,24 @@
         height: 415px;
         padding: 0px;
         margin-left: 10px;
+        article {
+            width: 30%;
+            padding: 0px 25px;
+        }
        .menu-first,
        .menu-first-last {
-         width: 30%;
+         width: 100%;
          padding-right: 25px;
        }
-       .menu-first-last {
-          margin-top: auto;
+       .menu-first-last1 {
+           margin-top: 75px;
        }
        .menu-second {
-        width: 30%;
+        width: 100%;
         padding-right: 25px;
        }
        .menu-third {
-        width: 30%;
+        width: 100%;
         padding-right: 25px;
        }
 

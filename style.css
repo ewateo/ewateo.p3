@@ -134,25 +134,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    align-items: center;
     width: 100%;
   }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-second {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-third {
-    width: 60%;
+    width: 100%;
   }
   .menu button {
     width: 100%;
   }
+  .menu article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
   .menu h2 {
-    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 }
 @media (min-width: 765px) {
@@ -291,25 +297,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    align-items: center;
     width: 100%;
   }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-second {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-third {
-    width: 60%;
+    width: 100%;
   }
   .menu button {
     width: 100%;
   }
+  .menu article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
   .menu h2 {
-    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 }
 @media (min-width: 990px) {
@@ -358,20 +370,24 @@
     padding: 0px;
     margin-left: 10px;
   }
+  .menu article {
+    width: 30%;
+    padding: 0px 25px;
+  }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
-  .menu .menu-first-last {
-    margin-top: auto;
+  .menu .menu-first-last1 {
+    margin-top: 75px;
   }
   .menu .menu-second {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
   .menu .menu-third {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
 }
@@ -1037,25 +1053,31 @@ footer .footer-second a, footer .footer-third a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    align-items: center;
     width: 100%;
   }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-second {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-third {
-    width: 60%;
+    width: 100%;
   }
   .menu button {
     width: 100%;
   }
+  .menu article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
   .menu h2 {
-    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 }
 @media (min-width: 765px) {
@@ -1194,25 +1216,31 @@ footer .footer-second a, footer .footer-third a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    align-items: center;
     width: 100%;
   }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-second {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-third {
-    width: 60%;
+    width: 100%;
   }
   .menu button {
     width: 100%;
   }
+  .menu article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
   .menu h2 {
-    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 }
 @media (min-width: 990px) {
@@ -1261,20 +1289,24 @@ footer .footer-second a, footer .footer-third a {
     padding: 0px;
     margin-left: 10px;
   }
+  .menu article {
+    width: 30%;
+    padding: 0px 25px;
+  }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
-  .menu .menu-first-last {
-    margin-top: auto;
+  .menu .menu-first-last1 {
+    margin-top: 75px;
   }
   .menu .menu-second {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
   .menu .menu-third {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
 }
@@ -1463,6 +1495,10 @@ footer .footer-second a, footer .footer-third a {
   flex-direction: column;
   margin: 10px;
   font-family: roboto;
+}
+.menu article {
+  display: flex;
+  flex-direction: column;
 }
 .menu li {
   display: flex;
@@ -1825,25 +1861,31 @@ footer .footer-second a, footer .footer-third a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    align-items: center;
     width: 100%;
   }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-second {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-third {
-    width: 60%;
+    width: 100%;
   }
   .menu button {
     width: 100%;
   }
+  .menu article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
   .menu h2 {
-    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 }
 @media (min-width: 765px) {
@@ -1982,25 +2024,31 @@ footer .footer-second a, footer .footer-third a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    align-items: center;
     width: 100%;
   }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-second {
-    width: 60%;
+    width: 100%;
   }
   .menu .menu-third {
-    width: 60%;
+    width: 100%;
   }
   .menu button {
     width: 100%;
   }
+  .menu article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
   .menu h2 {
-    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: auto;
   }
 }
 @media (min-width: 990px) {
@@ -2049,20 +2097,24 @@ footer .footer-second a, footer .footer-third a {
     padding: 0px;
     margin-left: 10px;
   }
+  .menu article {
+    width: 30%;
+    padding: 0px 25px;
+  }
   .menu .menu-first,
 .menu .menu-first-last {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
-  .menu .menu-first-last {
-    margin-top: auto;
+  .menu .menu-first-last1 {
+    margin-top: 75px;
   }
   .menu .menu-second {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
   .menu .menu-third {
-    width: 30%;
+    width: 100%;
     padding-right: 25px;
   }
 }/*# sourceMappingURL=style.css.map */
